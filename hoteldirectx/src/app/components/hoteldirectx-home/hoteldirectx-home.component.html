@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="overlay"></div>
+    <!-- <div class="col-12 pt-2">
+      <div class="logo d-flex align-items-center">
+        <img class="mr-3" src="https://media.graphcms.com/atJRAgdPSGmmG1Nnhd8F" alt="Hotel Direct-X Logo">
+        <p class="m-0">Hotel Direct-X<br><span>by TravelgateX</span></p>
+      </div>
+    </div> -->
+    <div class="col-12 title">
+      <img src="https://media.graphcms.com/atJRAgdPSGmmG1Nnhd8F" alt="Hotel Direct-X Logo">
+      <h1>Hotel Direct-X</h1>
+      <h2>Helping you to distribute transparently and giving you full control of your distribution</h2>
+    </div>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-4">
+          <div class="product-logo d-flex align-items-center justify-content-center">
+            <img src="./../../../assets/img/hotel.png" alt="Direct-X Hotel">
+          </div>
+          <div class="hotel fade-in" *ngIf="!letsee">
+            <h3>Hotel</h3>
+            <p>We connect to your channel manager and export all the data we need.</p>
+            <p>Hotels decide the pricing and can provide the content they want via their channel manager or a third party like ice-portal – can also apply any business rules such as market restrictions.</p>
+            <div class="btn-see d-flex align-items-center justify-content-end">
+              <button type="button" class="d-flex align-items-center" (click)="letsee = !letsee">see more</button>
+            </div>
+          </div>
+          <div class="see-more fade-in" *ngIf="letsee">
+            <div class="close d-flex align-items-center justify-content-end">
+              <button type="button" (click)="letsee = !letsee">X</button>
+            </div>
+            <ul>
+              <li>Gain time and reduce the time-to-market in your distribution strategy.</li>
+              <li>No need to sign an agreement with each OTA you want to work with.</li>
+              <li>We are building a pool of OTAs by consolidating them in one connection which you can access through one single contract.</li>
+              <li>Full control on pricing, content and restrictions.</li>
+              <li>Possibility to offer flash sales and specific discounts.</li>
+              <li>Leave the tech part to us and focus on product!.</li>
+              <li>Get the fastest and fully optimised response time.</li>
+              <li>OTAs start offering your product instantly as we take care of the mapping of your inventory for free for them.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+  </div>
+</div>

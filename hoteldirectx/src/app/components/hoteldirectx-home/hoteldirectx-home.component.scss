@@ -1,0 +1,100 @@
+@import './../../../sass/variables.scss';
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid{
+  height: 100vh;
+  background-image: url(https://fxmedia.s3.eu-west-1.amazonaws.com/featured_images/5be2ec6c8e5331541598316.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .overlay{
+    background: linear-gradient(135deg, rgba(24,41,69,1) 0%, rgba(24,41,69,1) 16%, rgba(8,45,166,1) 50%, rgba(0,157,246,1) 100%);
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  // .logo{
+  //   img{
+  //     width: 80px;
+  //   }
+  //   p{
+  //     color: #FFF;
+  //     font-size: 1.8rem;
+  //     line-height: 25px;
+  //     span{
+  //       font-family: 'Lato', sans-serif;
+  //       font-size: 1.2rem;
+  //     }
+  //   }
+  // }
+  .title{
+    margin: 5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 100px;
+      margin-bottom: 1em;
+    }
+    h1, h2{
+      text-align: center;
+      color: #FFF;
+    }
+    h2{
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+  }
+  .product-logo{
+    img{
+      width: 80px;
+      margin-bottom: 1em;
+    }
+  }
+  .hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p, h3{
+      text-align: center;
+      color: #FFF;
+    }
+    p{
+      font-size: 1.1rem;
+    }
+    .btn-see{
+      button{
+        border: 1px solid #FFF;
+        padding: 0.5em 1em;
+        border-radius: 100px;
+      }
+    }
+  }
+  .see-more{
+    ul{
+      li{
+        color: #FFF;
+      }
+    }
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

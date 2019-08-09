@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HoteldirectxHomeComponent implements OnInit {
 
-  letsee: boolean;
+  hotelsee: boolean;
+  otasee: boolean;
+  techsee: boolean;
 
   constructor() { }
 

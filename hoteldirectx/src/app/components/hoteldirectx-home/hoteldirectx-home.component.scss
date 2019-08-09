@@ -1,87 +1,211 @@
 @import './../../../sass/variables.scss';
 
-*{
+* {
   font-family: 'Roboto', sans-serif;
 }
 
-.container-fluid{
-  height: 100vh;
+.fa {
+  font-family: 'fontawesome';
+}
+
+.body-wrapp {
   background-image: url(https://fxmedia.s3.eu-west-1.amazonaws.com/featured_images/5be2ec6c8e5331541598316.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
-  .overlay{
-    background: linear-gradient(135deg, rgba(24,41,69,1) 0%, rgba(24,41,69,1) 16%, rgba(8,45,166,1) 50%, rgba(0,157,246,1) 100%);
-    opacity: 0.9;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-  // .logo{
-  //   img{
-  //     width: 80px;
-  //   }
-  //   p{
-  //     color: #FFF;
-  //     font-size: 1.8rem;
-  //     line-height: 25px;
-  //     span{
-  //       font-family: 'Lato', sans-serif;
-  //       font-size: 1.2rem;
-  //     }
-  //   }
-  // }
-  .title{
-    margin: 5em 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    img{
-      width: 100px;
-      margin-bottom: 1em;
+  padding-bottom: 5em;
+
+  .container {
+    .overlay {
+      background: linear-gradient(135deg, rgba(24, 41, 69, 1) 0%, rgba(24, 41, 69, 1) 16%, rgba(8, 45, 166, 1) 50%, rgba(0, 157, 246, 1) 100%);
+      opacity: 0.95;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
     }
-    h1, h2{
-      text-align: center;
-      color: #FFF;
-    }
-    h2{
-      font-weight: 300;
-      font-size: 1.5rem;
-    }
-  }
-  .product-logo{
-    img{
-      width: 80px;
-      margin-bottom: 1em;
-    }
-  }
-  .hotel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    p, h3{
-      text-align: center;
-      color: #FFF;
-    }
-    p{
-      font-size: 1.1rem;
-    }
-    .btn-see{
-      button{
-        border: 1px solid #FFF;
-        padding: 0.5em 1em;
-        border-radius: 100px;
+
+    // .logo{
+    //   img{
+    //     width: 80px;
+    //   }
+    //   p{
+    //     color: #FFF;
+    //     font-size: 1.8rem;
+    //     line-height: 25px;
+    //     span{
+    //       font-family: 'Lato', sans-serif;
+    //       font-size: 1.2rem;
+    //     }
+    //   }
+    // }
+    .title {
+      margin: 7em 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100px;
+        margin-bottom: 1em;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #FFF;
+      }
+
+      h2 {
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+      }
+
+      p {
+        text-align: center;
+        color: #FFF;
       }
     }
-  }
-  .see-more{
-    ul{
+
+    .big-event{
+      &:hover{
+        .product-logo{
+          img{
+            transition: 0.2s all linear;
+            transform: scale(1.1);
+          }
+        }
+      }
+      .product-logo {
+        img {
+          width: 80px;
+          margin-bottom: 1em;
+        }
+      }
+  
+      .hotel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 340px;
+  
+        p,
+        h3 {
+          text-align: center;
+          color: #FFF;
+        }
+  
+        p {
+          font-size: 1.1rem;
+        }
+  
+        .btn-see {
+          button {
+            border: 1px solid #FFF;
+            padding: 0.5em 1em;
+            border-radius: 100px;
+            background-color: transparent;
+            color: #FFF;
+  
+            &:hover {
+              transition: 0.2s all linear;
+              background-color: #FFF;
+              color: $blue;
+            }
+          }
+        }
+      }
+  
+      .see-more {
+        .closed {
+          button {
+            background: none;
+            border-radius: 50%;
+            border: 1px solid #FFF;
+            color: #FFF;
+            height: 30px;
+            width: 30px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  
+            &:hover {
+              background-color: #FFF;
+              color: $blue;
+              transition: 0.2s all linear;
+            }
+          }
+        }
+  
+        h3 {
+          color: #FFF;
+          text-align: center;
+          width: 100%;
+        }
+  
+        ul {
+          li {
+            color: #FFF;
+          }
+        }
+      }
+    }
+    .menu-footer{
+      margin-top: 10em;
+      padding: 0;
+      flex-wrap: wrap;
       li{
+        list-style: none;
+        margin: 0.5em;
+        a{
+          color: #FFF;
+        } 
+      }
+    }
+    .modal{
+      .modal-dialog{
+        .modal-content{
+          height: 85vh;
+          .modal-body{
+            overflow: auto;
+            p{
+              font-weight: 500;
+            }
+            ul{
+              margin-bottom: 1em;
+              li{
+                line-height: 24px;
+                margin-bottom: 0.5em;
+                span{
+                  color: $tech-company-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .logo-footer{
+      img{
+        width: 300px;
+      }
+    }
+    .copyright{
+      p{
         color: #FFF;
+        text-align: center;
+        font-size: 0.8rem;
+        .fa-heart{
+          color: $state-danger-text;
+        }
+        .fa-coffee{
+          color: $green;
+        }
       }
     }
   }
@@ -90,11 +214,38 @@
 .fade-in {
   animation: fadeIn ease 1s;
 }
-@keyframes fadeIn{
+
+@keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
+  }
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 768px){
+  .body-wrapp{
+    .container{
+      .big-event{
+        .hotel{
+          min-height: 445px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 425px){
+  .body-wrapp{
+    .container{
+      .big-event{
+        .hotel{
+          min-height: inherit;
+        }
+      }
+    }
   }
 }

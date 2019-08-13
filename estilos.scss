@@ -1,4 +1,4 @@
-@import './../../../sass/variables.scss';
+
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -58,7 +58,7 @@
         font-weight: bold;
         text-align: left;
         line-height: 32px;
-        color: $body-color;
+        color: #182945;
 
         span {
           font-family: 'Roboto', sans-serif;
@@ -70,7 +70,7 @@
       h2,
       p {
         text-align: center;
-        color: $body-color;
+        color: #182945;
       }
 
       h2 {
@@ -116,7 +116,7 @@
         p,
         h3 {
           text-align: center;
-          color: $body-color;
+          color: #182945;
         }
 
         p {
@@ -125,28 +125,29 @@
 
         .btn-see {
           button {
-            border: 1px solid $body-color;
+            border: 1px solid #182945;
             padding: 0.5em 1em;
             border-radius: 100px;
             background-color: transparent;
-            color: $body-color;
+            color: #182945;
 
             &:hover {
               transition: 0.2s all linear;
-              background-color: $body-color;
+              background-color: #182945;
               color: #FFF;
             }
           }
         }
       }
 
-      .see-more {
+      .see-more-hotel, .see-more-ota, .see-more-tech {
+        display: none;
         .closed {
           button {
             background: none;
             border-radius: 50%;
-            border: 1px solid $body-color;
-            color: $body-color;
+            border: 1px solid #182945;
+            color: #182945;
             height: 30px;
             width: 30px;
             font-size: 1.2rem;
@@ -155,7 +156,7 @@
             justify-content: center;
 
             &:hover {
-              background-color: $body-color;
+              background-color: #182945;
               color: #FFF;
               transition: 0.2s all linear;
             }
@@ -163,14 +164,14 @@
         }
 
         h3 {
-          color: $body-color;
+          color: #182945;
           text-align: center;
           width: 100%;
         }
 
         ul {
           li {
-            color: $body-color;
+            color: #182945;
           }
         }
       }
@@ -194,7 +195,7 @@
 
           &:hover {
             transition: 0.2s all linear;
-            border-left: 5px solid $tech-company-color;
+            border-left: 5px solid #009df6;
             padding-left: 5px;
           }
         }
@@ -211,7 +212,7 @@
         margin: 0.5em;
 
         a {
-          color: $body-color;
+          color: #182945;
         }
       }
     }
@@ -236,7 +237,7 @@
                 margin-bottom: 0.5em;
 
                 span {
-                  color: $tech-company-color;
+                  color: #009df6;
                 }
               }
             }
@@ -253,16 +254,16 @@
 
     .copyright {
       p {
-        color: $body-color;
+        color: #182945;
         text-align: center;
         font-size: 0.8rem;
 
         .fa-heart {
-          color: $state-danger-text;
+          color: red;
         }
 
         .fa-coffee {
-          color: $green;
+          color: green;
         }
       }
     }
@@ -291,11 +292,11 @@
       .social-fix{
         ul{
           padding-left: 10px;
-          li{
-            a{
-              img{}
-            }
-          }
+          // li{
+          //   a{
+          //     img{}
+          //   }
+          // }
         }
       }
     }

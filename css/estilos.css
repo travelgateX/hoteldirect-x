@@ -32,6 +32,9 @@
   width: 100px;
   margin-bottom: 1em;
 }
+.body-wrapp .container .title .logo-title {
+  width: 200px;
+}
 .body-wrapp .container .title h1 {
   font-family: "Lato", sans-serif;
   font-weight: bold;

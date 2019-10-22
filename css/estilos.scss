@@ -91,6 +91,12 @@
       img {
         width: 700px;
       }
+
+      p{
+        padding: 0 4em;
+        font-weight: 400;
+        font-size: 1.1rem;
+      }
     }
 
     .big-event {
@@ -115,12 +121,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        min-height: 340px;
+        min-height: 265px;
 
         p,
         h3 {
           text-align: center;
           color: #182945;
+        }
+
+        h3{
+          margin-bottom: 0.5em;
         }
 
         p {
@@ -171,11 +181,14 @@
           color: #182945;
           text-align: center;
           width: 100%;
+          padding-bottom: 0.5em;
+          margin: 0;
         }
 
         ul {
           li {
             color: #182945;
+            padding-bottom: 0.5em;
           }
         }
       }
@@ -333,6 +346,11 @@
           }
         }
       }
+      .directx-map {
+        p{
+          padding: 0;
+        }
+      }
       .menu-footer{
         margin-top: 0;
       }
@@ -367,6 +385,9 @@
       .directx-map {
         img {
           width: 100%;
+        }
+        p{
+          padding: 0;
         }
       }
     }
